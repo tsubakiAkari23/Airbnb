@@ -1,0 +1,178 @@
+/* header css */
+/* .header{
+    border-bottom: 2px solid rgb(210, 208, 208);
+} */
+
+/* navbar css */
+.navbar{
+    display: flex;
+    flex-direction: column;
+    padding: .8rem 6%;
+    gap: .8rem;
+    /* border: 2px solid yellow; */
+}
+
+/* .navbar>* {
+    border: 1.5px solid greenyellow;
+} */
+
+/* logo-toggle-box */
+.logo-toggle-box{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-toggle-box>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo img {
+    width: 7rem;
+}
+.logo-toggle-box>*:nth-child(n+2){
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.toggle-open-btn> span{
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+.toggle-close-btn> span{
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+/* logo-toggle-box */
+
+
+/* nav-main-container css */
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.nav-container>a {
+    color: lightgray;
+}
+
+.nav-container>a:hover {
+    color: white;
+}
+
+.menu-box{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    justify-content: center;
+    color: lightgray;
+    transition: all 0.3s;
+}
+
+.underline {
+    height: .085rem;
+    width: 0%;
+    background-color: #fff;
+    align-self: center;
+    transition: all 0.4s;
+}
+
+.nav-active>.underline {
+    width: 15%;
+}
+
+.nav-active {
+    color: white;
+}
+
+.nav-menu-hover{
+    color: white!important;
+}
+
+.underline-hover {
+    width: 100%!important;
+}
+
+.profile-menu {
+    background-color: white;
+    border-radius: 2.5rem;
+    padding: .4rem .5rem .4rem .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    align-self: flex-start;
+}
+
+.profile-menu img {
+    width: 2rem;
+    cursor: pointer;
+    /* border: 1.5px solid blue; */
+}
+/* nav-main-container css */
+
+
+.d-none{
+    display: none;
+}
+
+
+@media(min-width: 800px){
+    .navbar{
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        flex: 1;
+    }
+    .logo-toggle-box>:nth-child(n+2){
+        display: none;
+    }
+    .menu-box{
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+        margin-inline: auto;
+    }
+    .nav-search-btn{
+        padding-inline: 1.2rem;
+    }
+}
+
+
+@media(max-width: 1000px){
+    html{
+        /* font-size: 15px; */
+    }
+    .navbar{
+        gap: 1.4rem;
+        padding-inline: 4%;
+    }
+    .nav-container{
+        gap: 1.4rem;
+    }
+    .menu-box{
+        gap: 1rem;
+    }
+    .nav-search-btn{
+        padding-inline: 1.5rem;
+    }
+}
+@media(max-width: 800px){
+    .navbar{
+        padding-inline: 2.5%;
+    }
+}
